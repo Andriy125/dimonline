@@ -1,0 +1,140 @@
+body {
+    font-family: "Roboto";
+}
+
+.navbar {
+    border-radius:0 0 0.75rem  0.75rem ;    
+}
+.nav-pills .nav-link.active {
+    color: gray;
+    background-color: #fff;    
+}
+
+.menu .col-3  {
+    border-radius: 0px;
+}
+.nav-pills .nav-link {
+    border-radius: 0rem;
+}
+
+.nav_menu a {
+    font-weight: bold;
+}
+.menu {
+    padding: 0;
+    min-height: 100vh;
+    line-height: 2.5;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
+    min-width: 230px;
+}
+
+.nav_menu .nav-item a{
+    display: flex;
+    align-items: center;
+}
+
+.nav_menu .active {
+    box-shadow: -5px 0 0 -1px rgb(26, 115, 232) inset;
+    /* Прямокутник "Горизонтальне підкреслення" справа активного пункта меню */
+ }
+ .nav_menu .nav-link:hover {
+    box-shadow: 350px 0 0  rgb(187, 187, 187) inset;
+    
+ }
+ .nav_menu .active:hover {
+    box-shadow: -4px 0 0 0 rgb(26, 115, 232) inset;
+    /* Обнулення ефекту наведення активного пункта меню */
+} 
+
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+    margin: auto;
+    
+}
+.breadcrumb {
+    min-width: 180px;
+}
+.navbar .nav-item {
+    padding: 2px 5px;
+} 
+.navbar .nav-item a {
+    display: flex;
+    align-items: center;
+    /* Вирівнювання іконки користувача */
+}
+
+.navbar-nav .active {
+    box-shadow: 0 -5px 0 -1px  rgb(26, 115, 232) inset;
+    /* підкреслення активного пункта в хедері */
+ }
+
+
+.dropdown-menu {
+    border-radius: 0.75rem;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.sort {
+    border-radius: 0.75rem;
+    margin: 0 5px;
+}
+.table {
+      border-top: 2px solid #fff;    
+     /* кастиль щоб прибрати верхню лінію в таблиці */     
+}
+
+.table-account {  
+    background-color: #fff;
+    border-radius: 0.75rem;
+    width: 100%;
+    overflow-y: auto;
+    overflow: auto;
+    margin: 0 0 1em;
+}
+
+.hepla {
+    table-layout: fixed;
+}
+
+.table-account tr .btn {
+    background-color: #fff;
+}
+
+.pay-form {
+    border-radius: 0.75rem;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    /* заокруглення інпутів */
+}
+
+.form-control-custom {
+    border: none;    
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 2px 13px -7px rgba(0,0,0,.55);
+    border-radius: 2rem; 
+    /* кастомізація інпутів */
+}
+.btn-add{
+    border: none;
+    background-color: #00d423;
+    border-radius: 2rem;
+    font-weight: 600; 
+    /*кастомізація кнопки ADD в формі  */
+}
+.btn-filter {
+    border: none;
+    background-color: #ffffff;
+    color: gray;
+    border-radius: 2rem;
+    font-weight: 600; 
+    /*кастомізація кнопки замовлення перед таблицею  */
+}

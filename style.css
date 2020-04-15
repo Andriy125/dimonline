@@ -47,6 +47,12 @@ body {
     /* Обнулення ефекту наведення активного пункта меню */
 } 
 
+.button-header:focus {
+    border-color: rgba(0,0,0,.1);
+    outline: none !important;   
+    box-shadow: none;
+}
+
 .breadcrumb > li + li:before {
     padding: 0 5px;
     color: #ccc;

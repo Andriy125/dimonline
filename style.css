@@ -36,7 +36,7 @@ body {
 }
 
 .nav_menu .active:hover {
-    background-color: white;    
+    background-color: white !important; 
     /* Обнулення ефекту наведення активного пункта меню */
 }
 
@@ -125,18 +125,17 @@ body {
 .table {
     border-top: 2px solid #fff;    
    /* кастиль щоб прибрати верхню лінію в таблиці */     
-   z-index: 4;
 }
-
 
 .table-account tr .btn {
     background-color: #fff;
+    /* відбілювання кнопок, бо table-striped красить кнопки також */
 }
 .table-account tr .btn:hover {   
      background-color: #28a745; 
 }
 
-/* відбілювання кнопок, бо  table-striped красить кнопки також */
+
 
 
 

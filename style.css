@@ -2,19 +2,9 @@ body {
     font-family: "Roboto";
 }
 
-.navbar {
-    border-radius:0 0 0.75rem  0.75rem ;    
-}
-.nav-pills .nav-link.active {
-    color: gray;
-    background-color: #fff;    
-}
-
+/**** Навігаційне меню  ****/
 .menu .col-3  {
     border-radius: 0px;
-}
-.nav-pills .nav-link {
-    border-radius: 0rem;
 }
 
 .nav_menu a {
@@ -28,30 +18,44 @@ body {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
     min-width: 230px;
 }
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+}
 
-.nav_menu .nav-item a{
-    display: flex;
-    align-items: center;
+.nav-tabs .nav-link:hover {
+    background-color: rgb(187, 187, 187);
 }
 
 .nav_menu .active {
-    box-shadow: -5px 0 0 -1px rgb(26, 115, 232) inset;
+    box-shadow: -5px 0 0 -1px rgb(26, 115, 232) inset;    
     /* Прямокутник "Горизонтальне підкреслення" справа активного пункта меню */
- }
- .nav_menu .nav-link:hover {
-    box-shadow: 350px 0 0  rgb(187, 187, 187) inset;
-    
- }
- .nav_menu .active:hover {
-    box-shadow: -4px 0 0 0 rgb(26, 115, 232) inset;
-    /* Обнулення ефекту наведення активного пункта меню */
-} 
+}
 
+.nav_menu .active:hover {
+    background-color: white;    
+    /* Обнулення ефекту наведення активного пункта меню */
+}
+
+
+/**** Головна частина  ****/
+
+.content {
+    min-height: 100vh;
+}
+
+
+/**** Кнопка меню  ****/
 .button-header:focus {
     border-color: rgba(0,0,0,.1);
     outline: none !important;   
     box-shadow: none;
 }
+
+/**** Хлібні крошки ****/
 
 .breadcrumb > li + li:before {
     padding: 0 5px;
@@ -63,6 +67,13 @@ body {
 .breadcrumb {
     min-width: 180px;
 }
+
+/**** Хедер ****/
+
+.navbar {
+    border-radius:0 0 0.75rem  0.75rem ;    
+}
+
 .navbar .nav-item {
     padding: 2px 5px;
 } 
@@ -77,23 +88,12 @@ body {
     /* підкреслення активного пункта в хедері */
  }
 
-
 .dropdown-menu {
     border-radius: 0.75rem;
 }
 
-.content {
-    min-height: 100vh;
-}
 
-.sort {
-    border-radius: 0.75rem;
-    margin: 0 5px;
-}
-.table {
-      border-top: 2px solid #fff;    
-     /* кастиль щоб прибрати верхню лінію в таблиці */     
-}
+/**** Таблиця ****/
 
 .table-account {  
     background-color: #fff;
@@ -102,15 +102,28 @@ body {
     overflow-y: auto;
     overflow: auto;
     margin: 0 0 1em;
+    padding: 0 ;
 }
 
-.hepla {
-    table-layout: fixed;
+.table {
+    border-top: 2px solid #fff;    
+   /* кастиль щоб прибрати верхню лінію в таблиці */     
 }
+
 
 .table-account tr .btn {
     background-color: #fff;
 }
+/* відбілювання кнопок, бо  table-striped красить кнопки також */
+
+
+
+
+/**************************************************/
+/****************** Pay.html **********************/
+/**************************************************/
+
+/**** Форма оплати  ****/
 
 .pay-form {
     border-radius: 0.75rem;
@@ -135,12 +148,6 @@ body {
     border-radius: 2rem;
     font-weight: 600; 
     /*кастомізація кнопки ADD в формі  */
+    
 }
-.btn-filter {
-    border: none;
-    background-color: #ffffff;
-    color: gray;
-    border-radius: 2rem;
-    font-weight: 600; 
-    /*кастомізація кнопки замовлення перед таблицею  */
-}
+

@@ -18,15 +18,15 @@ body {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
     min-width: 230px;
 }
-.nav-tabs {
+ .menu .nav-tabs {
     border-bottom: none;
 }
-.nav-tabs .nav-link {
+.menu .nav-tabs .nav-link {
     border: none;
     border-radius: 0;
 }
 
-.nav-tabs .nav-link:hover {
+.menu .nav-tabs .nav-link:hover {
     background-color: rgb(187, 187, 187);
 }
 
@@ -76,20 +76,37 @@ body {
 
 .navbar .nav-item {
     padding: 2px 5px;
+    
 } 
 .navbar .nav-item a {
     display: flex;
-    align-items: center;
+    align-items: center;    
     /* Вирівнювання іконки користувача */
 }
 
-.navbar-nav .active {
-    box-shadow: 0 -5px 0 -1px  rgb(26, 115, 232) inset;
-    /* підкреслення активного пункта в хедері */
- }
+.navbar .nav-tabs {
+    border-bottom: none;
+    
+}
+.navbar .nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+}
+.navbar .nav-tabs .nav-link.active {
+    display: inline-flex;
+    border-bottom: 4px solid rgb(26, 115, 232);   
+}
 
 .dropdown-menu {
     border-radius: 0.75rem;
+   
+}
+.dropdown{
+       
+    box-shadow: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 

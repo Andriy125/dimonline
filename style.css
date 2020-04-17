@@ -79,7 +79,7 @@ body {
 }
 
 .navbar .nav-item {
-    padding: 2px 5px;
+    /* padding: 2px 0; */
 
 }
 
@@ -99,12 +99,7 @@ body {
     border-radius: 0;
 }
 
-.navbar .nav-tabs .nav-link.active {
-    display: inline-flex;
-    border-bottom: 4px solid rgb(26, 115, 232);
-}
-
-.dropdown-menu {
+.navbar-nav .dropdown-menu {
     border-radius: 0.75rem;
 
 }
@@ -115,8 +110,8 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
-
 
 .btn-order {
     border: none;
@@ -167,6 +162,7 @@ body {
 .pay-form {
     border-radius: 0.75rem;
     font-weight: bold;
+    border: 0.75rem;
 
 }
 
@@ -176,6 +172,18 @@ body {
     max-width: 600px;
     /* заокруглення інпутів */
 }
+
+.pay-form .btn {
+    border-radius: 0.75rem;
+
+}
+
+.pay-form .btn:focus {
+    border-color: rgba(0, 0, 0, .1);
+    outline: none !important;
+    box-shadow: none;
+}
+
 
 .form-control-custom {
     border: none;
